@@ -1,0 +1,12 @@
+
+#ifndef MANGOS_SKILLDISCOVERY_H
+#define MANGOS_SKILLDISCOVERY_H
+
+#include "Common.h"
+
+class Player;
+
+void LoadSkillDiscoveryTable();
+uint32 GetSkillDiscoverySpell(uint32 skillId, uint32 spellId, Player* player);
+uint32 GetExplicitDiscoverySpell(uint32 spellId, Player* player);
+#endif
